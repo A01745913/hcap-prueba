@@ -12,7 +12,7 @@ cv2.imwrite("resizeimagen.jpg",imagen)
 
 imagen = cv2.imread("imagen.jpg")
 imagen = cv2.cvtColor(imagen,cv2.COLOR_BGR2GRAY)
-print(image.shape)
+print(imagen.shape)
 print(imagen)
 cv2.imwrite("grayimagen.jpg",imagen)
 
