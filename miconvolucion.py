@@ -35,3 +35,26 @@ E=np.array(filtro2)
 
 F=np.zeros((3,4))
 
+
+matriz=[[1,2,3,4,5,6],[7,8,9,10,11,12],[0,0,1,16,17,18],[0,1,0,7,23,24],[1,7,6,5,4,3]]
+filtro=[[1,1,1],[0,0,0],[2,10,3]]
+
+matriz2=[]
+matriz=np.array(matriz)
+filtro=np.array(filtro)
+
+cont=0
+cont_2=0
+resultado=0
+for i in range(len(matriz)):
+    for x in range(len(filtro[0])):
+        for y in range(len(filtro[0])):
+            resultado +=(matriz[x+cont_2][y])*(filtro[x][y])
+            cont= cont +1
+            if cont ==9:
+                matriz2.append(resultado)
+                resultado=0
+                break            
+    con_2=cont_2 +1 
+print(matriz2) 
+
